@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/toolbar/about.png</file>
+        <file>images/toolbar/add.png</file>
+        <file>images/toolbar/ball_green.png</file>
+        <file>images/toolbar/ball_red.png</file>
+        <file>images/toolbar/computer.png</file>
+        <file>images/toolbar/remove.png</file>
+        <file>images/toolbar/settings.png</file>
+        <file>images/toolbar/edit.png</file>
+    </qresource>
+</RCC>

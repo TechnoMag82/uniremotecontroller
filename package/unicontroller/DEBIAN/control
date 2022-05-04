@@ -1,0 +1,10 @@
+Package: uni-remote-controller
+Version: 1.0-1
+Maintainer: technomag <technomag82@gmail.com>
+Architecture: amd64
+Installed-Size: 4000
+Download-Size: 3000
+Priority: optional
+Section: misc
+Depends: libqt5core5a (>= 5.9.5), libqt5widgets5 (>= 5.9.5), libqt5gui5 (>= 5.9.5), libstdc++6 (>= 8.4.0), libgcc1 (>= 1:8.4.0), libc6 (>= 2.27)
+Description: Desktop application for control computer from android application

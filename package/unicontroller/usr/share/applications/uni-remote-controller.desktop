@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Universal remote controller
+GenericName=Universal remote controller
+Comment=Desktop application for control computer from android application
+TryExec=uni-remote-controller
+Exec=uni-remote-controller
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=computer.png
+Categories=Network;

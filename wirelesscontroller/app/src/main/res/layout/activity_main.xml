@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wireless controller"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_power_off"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="32dp"
+        android:background="@drawable/ic_power_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_volume_up"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_margin="32dp"
+        android:background="@drawable/ic_button_right_1"
+        android:text="Volume +"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_volume_down"
+        app:layout_constraintTop_toBottomOf="@+id/button_power_off" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_volume_down"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_margin="32dp"
+        android:background="@drawable/ic_button_left"
+        android:text="Volume -"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button_volume_up"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_power_off" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_play_next"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:background="@drawable/ic_play_next"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_play"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_play_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:background="@drawable/ic_play_prev"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button_pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:background="@drawable/ic_play"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button_play_next"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_pause"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:background="@drawable/ic_pause"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button_play"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_play_prev"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="260dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
